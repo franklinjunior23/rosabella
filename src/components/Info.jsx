@@ -29,7 +29,7 @@ export default function Info() {
                 {
                     info.map((dato =>
 
-                        <aside className="bg-amber-200 p-6 rounded-2xl md:w-[45%]" key={dato.title}>
+                        <aside className="bg-amber-200 p-8 rounded-2xl md:w-[45%]" key={dato.title}>
                             <h3 className="py-2 text-2xl">
                                 {dato.title}
                             </h3>
@@ -40,7 +40,7 @@ export default function Info() {
                     ))
                 }
 
-                <aside className=' p-6 flex justify-center flex-wrap gap-14 '>
+                <aside className=' p-8 flex justify-center flex-wrap gap-14 '>
                     {
                         fotoinfo.map((foto =>
 
@@ -49,6 +49,16 @@ export default function Info() {
                         ))
                     }
                 </aside>
+
+            </section>
+
+            <section className='mt-[100px] max-w-screen-xl m-auto p-5 py-6'>
+                <h3 className='text-center text-2xl py-5 bg-[url("")] mb-10 tracking-wide	'>TE INVITAMOS A NUESTRA TIENDA, ¡VEN! VISÍTANOS </h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d344.7818716548381!2d-76.99754653596544!3d-12.128458022400691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7f7ddf912b9%3A0xe96baced7539a30d!2sFloreria%20Rosabella!5e0!3m2!1ses!2spe!4v1656897609492!5m2!1ses!2spe"
+                    className='w-full h-[500px]' >
+                </iframe>
+               
 
             </section>
 

@@ -20,7 +20,7 @@ export default function Navbar() {
                 </div>
                 
                 <nav className="hidden lg:block">
-                    <ul className="flex items-center gap-x-5">
+                    <ul className="flex items-center gap-x-5 text-lg">
                         <li>
                             <a href="">Home</a>
                         </li>
@@ -38,7 +38,7 @@ export default function Navbar() {
                 <div className={ Menu ? 'hidden' : "fixed w-60 h-screen right-0 top-0 bg-amber-200 z-20 lg:hidden"}>
                     <TfiClose className="absolute top-4 right-2 cursor-pointer" size={27} onClick={OcultarMenu}/>
                     <nav>
-                        <ul>
+                        <ul className="text-lg">
                             <li>
                                 <a href="">Home</a>
                             </li>
