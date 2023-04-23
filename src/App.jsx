@@ -1,19 +1,19 @@
-
-import Info from './components/Info'
 import Navbar from './components/Navbar'
-import Slider from './components/Slider'
-import Pie from './components/Píe'
+import Pie from "./components/Píe"
 
 
-function App() {
+
+function App(props) {
   return (
     <>
-      <Navbar/>
-      <Slider/>
-      <Info/>
-      <Pie/>
+    <Navbar/>
+
+    { props.children }
+
+    <Pie/>
     </>
   )
 }
+
 
 export default App

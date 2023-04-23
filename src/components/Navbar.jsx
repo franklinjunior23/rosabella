@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { TfiAlignRight , TfiClose , TfiShoppingCartFull} from "react-icons/tfi";
-useState
+import {  Link } from "react-router-dom";
 
 export default function Navbar() {
 
@@ -11,9 +11,9 @@ export default function Navbar() {
     }
     return (
         <header className="">
-            <nav className="max-w-screen-xl mx-auto flex justify-between items-center px-6 py-4">
+            <nav className="max-w-screen-xl m-auto flex justify-between items-center px-6 py-4">
                 <div>
-                    <h1 className="text-3xl	">Rosabella</h1>
+                    <Link className="text-3xl" to={'/'}>  Rosabella</Link>
                 </div>
                 <div className="lg:hidden">
                     <TfiAlignRight className="cursor-pointer " onClick={OcultarMenu} size={27} />
@@ -22,16 +22,16 @@ export default function Navbar() {
                 <nav className="hidden lg:block">
                     <ul className="flex items-center gap-x-5 text-lg">
                         <li>
-                            <a href="">Home</a>
+                            <Link to={'/'}>Home</Link>
                         </li>
                         <li>
-                            <a href="">Arreglos</a>
+                            <Link to={'/Catalogo'}>Catalogo</Link>
                         </li>
                         <li>
-                            <a href="">Catalogo</a>
+                            <Link to={'/Arreglos'}>Arreglos</Link>
                         </li>
                         <li className=" px-7 py-1 rounded-xl bg-amber-200 cursor-pointer ">
-                            <TfiShoppingCartFull  size={23}/>
+                            <TfiShoppingCartFull size={23}/>
                         </li>
                     </ul>
                 </nav>
@@ -40,11 +40,10 @@ export default function Navbar() {
                     <nav>
                         <ul className="text-lg">
                             <li>
-                                <a href="">Home</a>
+                                <Link to={'/'}>Home</Link>
                             </li>
                         </ul>
                     </nav>
-
                 </div>
             </nav>
             <div className="lg:hidden fixed top-[60vh] z-10 right-3 p-4 bg-amber-200 rounded-full cursor-pointer" >
