@@ -4,9 +4,11 @@ import { TfiArrowRight } from "react-icons/tfi";
 
 export default function ErrorPage() {
   const error = useRouteError();
+
   return (
     <div className="w-screen h-screen bg-black grid place-content-center ">
       <div>
+        <h1 className="text-white text-center"> {error.status } <br /> {error.statusText} <br /> {error.error.message} </h1>
         <img src={imageerror} alt="" className="" width={1200} />
         <Link
           to={"/"}
