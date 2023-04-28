@@ -1,28 +1,26 @@
 import { useState } from "react";
 import { TfiAlignRight, TfiClose, TfiShoppingCartFull } from "react-icons/tfi";
 import { Link } from "react-router-dom";
-
+import Rosas from "/images/rosas.png";
+import { HiOutlineTrash } from "react-icons/hi2";
 
 export default function Navbar() {
-
   const [Menu, setMenu] = useState(true);
   const [CarritoMod, setCarritoMod] = useState(true);
-
 
   const OcultarMenu = () => {
     setMenu(!Menu);
   };
 
-
   const conter = 0;
-
 
   const abrirmodalcarrito = () => {
     setCarritoMod(!CarritoMod);
   };
 
-  const aparecer = CarritoMod ? "hidden" : "fixed right-4 top-2 py-8 px-10 rounded-2xl w-[300px] lg:w-[400px] h-[98vh] z-40 bg-black text-white " ;
-
+  const aparecer = CarritoMod
+    ? "hidden"
+    : "fixed right-4 top-2 py-8 px-4 md:px-7 rounded-2xl w-[300px] lg:w-[400px] h-[98vh] z-40 bg-white text-white shadow-2xl	 ";
 
   return (
     <>
@@ -85,22 +83,226 @@ export default function Navbar() {
             </nav>
           </div>
         </nav>
-        <div className="lg:hidden fixed top-[60vh] z-10 right-3 p-4 bg-amber-200 rounded-full cursor-pointer" onClick={abrirmodalcarrito}>
-          <TfiShoppingCartFull size={27}  />
+        <div
+          className="lg:hidden fixed top-[60vh] z-10 right-3 p-4 bg-amber-200 rounded-full cursor-pointer"
+          onClick={abrirmodalcarrito}
+        >
+          <TfiShoppingCartFull size={27} />
         </div>
-
-       
       </header>
 
       <aside className={aparecer}>
         <TfiClose
-          className="absolute top-4 right-4 cursor-pointer"
-          size={27}
+          className="absolute top-2 right-4 cursor-pointer "
+          size={25}
+          color="black"
+          fontWeight={700}
           onClick={abrirmodalcarrito}
-          
         />
-       
-        modelcarrito
+        <main className="flex flex-col gap-y-2 mt-2 h-5/6 text-black overscroll-contain	">
+          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 ">
+            <img
+              src={Rosas}
+              alt=""
+              className="w-[110px] h-[120px] block p-2 rounded-2xl "
+            />
+            <div className="p-4 lg:p-2 ">
+              <p className=" w-32 lg:w-48 h-14 lg:text-xl">
+                Rosas Rojas Bretaña
+              </p>
+              <div className="grid  grid-cols-4 lg:mt-2	gap-x-1">
+                <button> - </button>
+                <input
+                  className="text-center w-[40px]"
+                  readOnly
+                  type="text"
+                  name=""
+                  id=""
+                />
+                <button> + </button>
+                <button>
+                  {" "}
+                  <HiOutlineTrash size={24} />{" "}
+                </button>
+              </div>
+            </div>
+          </section>
+          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 ">
+            <img
+              src={Rosas}
+              alt=""
+              className="w-[110px] h-[120px] block p-2 rounded-2xl "
+            />
+            <div className="p-4 lg:p-2 ">
+              <p className=" w-32 lg:w-48 h-14 lg:text-xl">
+                Rosas Rojas Bretaña
+              </p>
+              <div className="grid  grid-cols-4 lg:mt-2	gap-x-1">
+                <button> - </button>
+                <input
+                  className="text-center w-[40px]"
+                  readOnly
+                  type="text"
+                  name=""
+                  id=""
+                />
+                <button> + </button>
+                <button>
+                  {" "}
+                  <HiOutlineTrash size={24} />{" "}
+                </button>
+              </div>
+            </div>
+          </section>
+          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 ">
+            <img
+              src={Rosas}
+              alt=""
+              className="w-[110px] h-[120px] block p-2 rounded-2xl "
+            />
+            <div className="p-4 lg:p-2 ">
+              <p className=" w-32 lg:w-48 h-14 lg:text-xl">
+                Rosas Rojas Bretaña
+              </p>
+              <div className="grid  grid-cols-4 lg:mt-2	gap-x-1">
+                <button> - </button>
+                <input
+                  className="text-center w-[40px]"
+                  readOnly
+                  type="text"
+                  name=""
+                  id=""
+                />
+                <button> + </button>
+                <button>
+                  {" "}
+                  <HiOutlineTrash size={24} />{" "}
+                </button>
+              </div>
+            </div>
+          </section>
+          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 ">
+            <img
+              src={Rosas}
+              alt=""
+              className="w-[110px] h-[120px] block p-2 rounded-2xl "
+            />
+            <div className="p-4 lg:p-2 ">
+              <p className=" w-32 lg:w-48 h-14 lg:text-xl">
+                Rosas Rojas Bretaña
+              </p>
+              <div className="grid  grid-cols-4 lg:mt-2	gap-x-1">
+                <button> - </button>
+                <input
+                  className="text-center w-[40px]"
+                  readOnly
+                  type="text"
+                  name=""
+                  id=""
+                />
+                <button> + </button>
+                <button>
+                  {" "}
+                  <HiOutlineTrash size={24} />{" "}
+                </button>
+              </div>
+            </div>
+          </section>
+          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 ">
+            <img
+              src={Rosas}
+              alt=""
+              className="w-[110px] h-[120px] block p-2 rounded-2xl "
+            />
+            <div className="p-4 lg:p-2 ">
+              <p className=" w-32 lg:w-48 h-14 lg:text-xl">
+                Rosas Rojas Bretaña
+              </p>
+              <div className="grid  grid-cols-4 lg:mt-2	gap-x-1">
+                <button> - </button>
+                <input
+                  className="text-center w-[40px]"
+                  readOnly
+                  type="text"
+                  name=""
+                  id=""
+                />
+                <button> + </button>
+                <button>
+                  {" "}
+                  <HiOutlineTrash size={24} />{" "}
+                </button>
+              </div>
+            </div>
+          </section>
+          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 ">
+            <img
+              src={Rosas}
+              alt=""
+              className="w-[110px] h-[120px] block p-2 rounded-2xl "
+            />
+            <div className="p-4 lg:p-2 ">
+              <p className=" w-32 lg:w-48 h-14 lg:text-xl">
+                Rosas Rojas Bretaña
+              </p>
+              <div className="grid  grid-cols-4 lg:mt-2	gap-x-1">
+                <button> - </button>
+                <input
+                  className="text-center w-[40px]"
+                  readOnly
+                  type="text"
+                  name=""
+                  id=""
+                />
+                <button> + </button>
+                <button>
+                  {" "}
+                  <HiOutlineTrash size={24} />{" "}
+                </button>
+              </div>
+            </div>
+          </section>v
+
+          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 ">
+            <img
+              src={Rosas}
+              alt=""
+              className="w-[110px] h-[120px] block p-2 rounded-2xl "
+            />
+            <div className="p-4 lg:p-2 ">
+              <p className=" w-32 lg:w-48 h-14 lg:text-xl">
+                Rosas Rojas Bretaña
+              </p>
+              <div className="grid  grid-cols-4 lg:mt-2	gap-x-1">
+                <button> - </button>
+                <input
+                  className="text-center w-[40px]"
+                  readOnly
+                  type="text"
+                  name=""
+                  id=""
+                />
+                <button> + </button>
+                <button>
+                  {" "}
+                  <HiOutlineTrash size={24} />{" "}
+                </button>
+              </div>
+            </div>
+          </section>
+          
+
+          <hr className="to-black  border-black	" />
+
+          
+        </main>
+        <section className="text-black">
+            <div className="grid grid-cols-2 text-xl my-5">
+              <h4> Subtotal  </h4>
+              <h4 className="text-end"> $ 202.20 </h4>
+              
+            </div>
+          </section>
       </aside>
     </>
 
