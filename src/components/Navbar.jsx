@@ -99,8 +99,8 @@ export default function Navbar() {
           fontWeight={700}
           onClick={abrirmodalcarrito}
         />
-        <main className="flex flex-col gap-y-2 mt-2 h-5/6 text-black overscroll-contain	">
-          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 ">
+        <main className=" mt-2 h-5/6 w-full overflow-y-auto	  text-black  ">
+          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 my-4">
             <img
               src={Rosas}
               alt=""
@@ -127,7 +127,7 @@ export default function Navbar() {
               </div>
             </div>
           </section>
-          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 ">
+          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 my-4">
             <img
               src={Rosas}
               alt=""
@@ -154,7 +154,7 @@ export default function Navbar() {
               </div>
             </div>
           </section>
-          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 ">
+          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 my-4">
             <img
               src={Rosas}
               alt=""
@@ -181,89 +181,7 @@ export default function Navbar() {
               </div>
             </div>
           </section>
-          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 ">
-            <img
-              src={Rosas}
-              alt=""
-              className="w-[110px] h-[120px] block p-2 rounded-2xl "
-            />
-            <div className="p-4 lg:p-2 ">
-              <p className=" w-32 lg:w-48 h-14 lg:text-xl">
-                Rosas Rojas Bretaña
-              </p>
-              <div className="grid  grid-cols-4 lg:mt-2	gap-x-1">
-                <button> - </button>
-                <input
-                  className="text-center w-[40px]"
-                  readOnly
-                  type="text"
-                  name=""
-                  id=""
-                />
-                <button> + </button>
-                <button>
-                  {" "}
-                  <HiOutlineTrash size={24} />{" "}
-                </button>
-              </div>
-            </div>
-          </section>
-          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 ">
-            <img
-              src={Rosas}
-              alt=""
-              className="w-[110px] h-[120px] block p-2 rounded-2xl "
-            />
-            <div className="p-4 lg:p-2 ">
-              <p className=" w-32 lg:w-48 h-14 lg:text-xl">
-                Rosas Rojas Bretaña
-              </p>
-              <div className="grid  grid-cols-4 lg:mt-2	gap-x-1">
-                <button> - </button>
-                <input
-                  className="text-center w-[40px]"
-                  readOnly
-                  type="text"
-                  name=""
-                  id=""
-                />
-                <button> + </button>
-                <button>
-                  {" "}
-                  <HiOutlineTrash size={24} />{" "}
-                </button>
-              </div>
-            </div>
-          </section>
-          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 ">
-            <img
-              src={Rosas}
-              alt=""
-              className="w-[110px] h-[120px] block p-2 rounded-2xl "
-            />
-            <div className="p-4 lg:p-2 ">
-              <p className=" w-32 lg:w-48 h-14 lg:text-xl">
-                Rosas Rojas Bretaña
-              </p>
-              <div className="grid  grid-cols-4 lg:mt-2	gap-x-1">
-                <button> - </button>
-                <input
-                  className="text-center w-[40px]"
-                  readOnly
-                  type="text"
-                  name=""
-                  id=""
-                />
-                <button> + </button>
-                <button>
-                  {" "}
-                  <HiOutlineTrash size={24} />{" "}
-                </button>
-              </div>
-            </div>
-          </section>v
-
-          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 ">
+          <section className="flex overflow-hidden border-t border-b-4 rounded-3xl h-30 my-4">
             <img
               src={Rosas}
               alt=""
@@ -291,11 +209,13 @@ export default function Navbar() {
             </div>
           </section>
           
+          
 
-          <hr className="to-black  border-black	" />
+          
 
           
         </main>
+        <hr className="to-black  border-black	" />
         <section className="text-black">
             <div className="grid grid-cols-2 text-xl my-5">
               <h4> Subtotal  </h4>
